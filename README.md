@@ -14,7 +14,7 @@ pip install -e .
 
 ## Download Pretrained Model 
 
-The pretrained model is available at [Huggingface](). You can download it and fune-tune the model on downstream tasks.
+The pretrained model is available at [Huggingface](https://huggingface.co/oomics/RNALens). You can download it and fune-tune the model on downstream tasks.
 
 
 ## Finetune
