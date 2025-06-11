@@ -7,7 +7,7 @@
 conda create -n rnalens python==3.9.13
 conda activate rnalens
 ```
-2. In rnalens environment, install the `rnalens` library and the Python packages specified in the `pyproject.toml` file.
+2. In RNALens environment, install the `rnalens` library and the Python packages specified in the `pyproject.toml` file.
 ```bash
 pip install -e .
 ```
