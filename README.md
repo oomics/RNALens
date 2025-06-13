@@ -33,7 +33,7 @@ cd scripts/train
 for data in HEK pc3 Muscle
 do 
     python \
-        run_pretrain.py \
+        run_finetune.py \
         --data_fpath ../../data/cell_line/${data}_sequence.csv \
         --tokenizer_name_or_path <tokenizer_name> \
         --model_name_or_path /path/to/pretrained/model \
