@@ -16,6 +16,12 @@ pip install -e .
 
 The pretrained model is available at [Huggingface](https://huggingface.co/oomics/RNALens). You can download it and fune-tune the model on downstream tasks.
 
+## Data
+
+For downstream tasks, you can find the data [here](https://github.com/a96123155/UTR-LM?tab=readme-ov-file#file-structure). Specifically, we use the following three datasets:
+- [HEK_sequence](https://codeocean.com/capsule/4214075/tree/v1/data/TE_REL_Endogenous_Cao/HEK_sequence.csv)
+- [Muscle_sequence](https://codeocean.com/capsule/4214075/tree/v1/data/TE_REL_Endogenous_Cao/Muscle_sequence.csv)
+- [pc3_sequence](https://codeocean.com/capsule/4214075/tree/v1/data/TE_REL_Endogenous_Cao/pc3_sequence.csv)
 
 ## Finetune
 
