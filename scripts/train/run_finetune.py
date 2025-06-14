@@ -15,6 +15,7 @@ from transformers import TrainingArguments, Trainer, HfArgumentParser, TrainerCa
 
 from rnalens.model import BertForSequenceClassification, BertConfig
 from rnalens.data import FinetuneDataset, Alphabet
+from transformers import AutoTokenizer
 
 @dataclass
 class FinetuneArguments:
@@ -134,8 +135,7 @@ if __name__ == "__main__":
     
     print(f"[info] Loading tokenizer {finetune_args.tokenizer_name_or_path}...")
     # load tokenizer
-    from transformers import AutoTokenizer
-    tokenizer = AutoTokenizer.from_pretrained(finetune_args.tokenizer_name_or_path, trust_remote_code=True)
+    tokenizer = AutoTokenizer.from_pretrained(finetune_args.tokenizer_name_or_path)
 
     csv_data = pd.read_csv(finetune_args.data_fpath)
 

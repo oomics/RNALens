@@ -35,7 +35,7 @@ do
     python \
         run_finetune.py \
         --data_fpath ../../data/cell_line/${data}_sequence.csv \
-        --tokenizer_name_or_path <tokenizer_name> \
+        --tokenizer_name_or_path /path/to/pretrained/model \
         --model_name_or_path /path/to/pretrained/model \
         --seq_type utr \
         --label_type rnaseq_log \
